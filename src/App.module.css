@@ -289,4 +289,24 @@ html, body {
   background-color: #f8f9fa; /* Optional background */
 }
 
+.appFooter {
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  padding: 1rem;
+  margin-top: 1.5rem; /* Space above the footer */
+  background-color: #e9ecef; /* Light grey background */
+  color: #6c757d; /* Muted text color */
+  text-align: center;
+  font-size: 0.85em;
+  border-top: 1px solid #dee2e6; /* Subtle top border */
+  width: 100%; /* Make footer span the width of its container (.centeredContainer) */
+  box-sizing: border-box;
+}
 
+.appFooter p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.appFooter strong {
+ color: #495057;
+}
