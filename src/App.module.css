@@ -205,3 +205,88 @@ html, body {
 .appContent {
     padding-top: 48px; 
 }
+
+.messageBubble {
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 5px 0;
+  max-width: 75%; /* Slightly wider max width */
+  word-wrap: break-word; /* Ensure long words break */
+  line-height: 1.4;
+}
+
+.userMessage {
+  background: #007bff;
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 5px; /* Bubble tail effect */
+}
+
+.botMessage {
+  background: #e5e5ea;
+  color: #000;
+  align-self: flex-start;
+  border-bottom-left-radius: 5px; /* Bubble tail effect */
+}
+
+/* Ensure chat window scrolls and messages align correctly */
+.chatWindow {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Add some space between bubbles */
+}
+
+
+/* --- NEW: Style for Loading Indicator --- */
+.loadingIndicator {
+  margin: 10px 0;
+  align-self: flex-start;
+  color: #888; /* Darker grey */
+  font-style: italic;
+}
+
+/* --- NEW: Styles for Suggestions Area --- */
+.suggestionsArea {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+  gap: 8px; /* Space between buttons */
+  padding: 5px 15px 10px 15px; /* Padding around the suggestions */
+  border-top: 1px solid #eee; /* Separator line */
+}
+
+.suggestionButton {
+  padding: 6px 12px;
+  font-size: 0.9em;
+  color: #007bff;
+  background-color: #e7f3ff; /* Light blue background */
+  border: 1px solid #cfe2ff; /* Slightly darker border */
+  border-radius: 20px; /* Pill shape */
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap; /* Prevent button text wrapping */
+}
+
+.suggestionButton:hover:not(:disabled) {
+  background-color: #cde2ff;
+  border-color: #b3d2ff;
+}
+
+.suggestionButton:disabled {
+  color: #aaa;
+  background-color: #f0f0f0;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* --- Adjust Input Area Spacing --- */
+.inputArea {
+  display: flex;
+  padding: 10px 15px; /* Adjust padding as needed */
+  border-top: 1px solid #ccc;
+  background-color: #f8f9fa; /* Optional background */
+}
+
+
